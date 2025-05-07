@@ -1,0 +1,18 @@
+Package: maisenerxiaTools
+Title: Paquete de herramientas de MaisEnerxia para R
+Version: 0.0.0.9000
+Authors@R: 
+    person("Javier", "Martínez", , "javiermartinex@maisenerxia.com", role = c("aut", "cre"))
+Description: Paquete de herramientas de MaisEnerxia para R
+License: MIT
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports:
+    tidyverse
+    duckdb
+    arrow
+    glue
+    readxl
+    lubridate
+    ggtext
