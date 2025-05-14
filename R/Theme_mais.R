@@ -20,42 +20,35 @@
 #'   geom_point(size = 3) +
 #'   theme_mais(base_size = 12, legend_position = "bottom")
 
-theme_mais <- function(base_size    = 12,
-                       base_family  = "Roboto",
-                       legend_position = "right") {
-  ggplot2::theme_minimal(base_size = base_size, base_family = base_family) +
-    ggplot2::theme(
-      panel.grid.major    = element_line(color = "#f0f0f0", size = .2),
-      panel.grid.minor    = element_line(color = "#f0f0f0", size = .1),
-      plot.background     = element_rect(fill = "#ffffff", color = NA),
-      panel.background    = element_rect(fill = "#ffffff", color = NA),
-      plot.title          = ggtext::element_markdown(
-                              hjust  = 0,
-                              size   = base_size * 1.2,
-                              family = base_family,
-                              color  = "#000000"
-                            ),
-      plot.subtitle       = ggtext::element_markdown(
-                              hjust  = 0,
-                              size   = base_size,
-                              family = base_family,
-                              color  = "#000000"
-                            ),
-      plot.caption        = ggtext::element_markdown(
-                              size   = base_size * 0.8,
-                              hjust  = 0,
-                              vjust  = .5,
-                              family = base_family,
-                              color  = "#777777"
-                            ),
-      legend.position     = legend_position,
-      legend.key          = element_rect(fill = "transparent", colour = "transparent"),
-      legend.title        = element_blank(),
-      axis.title.x        = element_text(size = base_size, family = base_family),
-      axis.title.y        = element_text(size = base_size, family = base_family),
-      axis.text.x         = element_text(size = base_size * 0.9, family = base_family),
-      axis.text.y         = element_text(size = base_size * 0.9, family = base_family),
-      strip.text          = element_text(size = base_size * 0.9, family = base_family),
-      strip.background    = element_rect(fill = "transparent", color = NA)
-    )
+theme_mais <- function(){
+  theme(
+    #text elements
+    panel.grid.major = element_line(color = "#f0f0f0", size=.2),
+    panel.grid.minor = element_line(color = "#f0f0f0", size=.1),
+    plot.background = element_rect(color="#ffffff", fill="#ffffff"),
+    panel.background = element_rect(color="#ffffff", fill="#ffffff"),
+    plot.title = element_markdown(hjust = 0, size = 13,
+                              family="Roboto",
+                              color = "#000000"),
+    plot.subtitle = element_markdown(hjust = 0, size = 12,
+                                  family="Mabry Pro Light",
+                                  color = "#000000"),
+    plot.caption = element_markdown(size = 9,
+                                hjust = 0, 
+                                vjust = .5,
+                                family="Mabry Pro Light",
+                                color = "#777777"),
+    legend.position="none",
+    legend.key = element_rect(fill = "transparent", colour = "transparent"),
+    legend.title = element_blank(),
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank(),
+    axis.text.x = element_text(size = 10,
+                               family="Roboto Light"),
+    axis.text.y = element_text(size = 10,
+                               color = "grey27",
+                               family="Roboto Light"),
+    strip.text = element_text(family = "Roboto Light", size = 10),
+    strip.background = element_rect(fill = "transparent")
+  )
 }
