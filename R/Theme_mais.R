@@ -4,11 +4,6 @@
 #' Tema personalizado para ggplot2 con la identidad visual de Mais Enerxia:
 #' tipografia Roboto, fondo limpio y grillas suaves.
 #' 
-#' @param base_size Tamaño de la fuente en punto. Por defecto es 12.
-#' @param base_family Familia de fuentes. Por defecto es "Roboto".
-#' @param legend_position Posicion de la leyenda. Por defecto es "none".
-#' 
-#' 
 #' @return Un objeto `ggplot2::theme` listo para aplicar. 
 #' @import ggplot2
 #' @importFrom ggtext element_markdown

@@ -4,7 +4,7 @@
 \alias{theme_mais}
 \title{Tema de Mais Enerxia para ggplot2}
 \usage{
-theme_mais(base_size = 12, base_family = "Roboto", legend_position = "right")
+theme_mais()
 }
 \arguments{
 \item{base_size}{Tamaño de la fuente en punto. Por defecto es 12.}
