@@ -15,4 +15,5 @@ Imports:
     glue,
     readxl,
     lubridate,
-    ggtext
+    ggtext,
+    ggplot2

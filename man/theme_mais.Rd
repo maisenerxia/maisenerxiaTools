@@ -6,13 +6,6 @@
 \usage{
 theme_mais()
 }
-\arguments{
-\item{base_size}{Tamaño de la fuente en punto. Por defecto es 12.}
-
-\item{base_family}{Familia de fuentes. Por defecto es "Roboto".}
-
-\item{legend_position}{Posicion de la leyenda. Por defecto es "none".}
-}
 \value{
 Un objeto \code{ggplot2::theme} listo para aplicar.
 }
