@@ -1,7 +1,4 @@
 library(maisenerxiaTools)
-library(polars)
-library(arrow)
-library(dplyr)
 
 df = open_dataset("preciospdbc") %>%
     mutate(ts_cest = with_tz(ts_cest, "Europe/Madrid")) %>%
